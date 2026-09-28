@@ -89,7 +89,7 @@ export class AuthStore {
       )
       .subscribe({
         next: (response) => {
-          this.router.navigate(['/login']);
+          this.router.navigate(['auth/login']);
         },
         error: (err: HttpErrorResponse) => {
           this.messageService.add({
