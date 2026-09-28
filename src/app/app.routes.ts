@@ -12,12 +12,12 @@ export const routes: Routes = [
   { path: 'enrollments', 
     canActivate: [authGuard],
     component: MainLayout,
-    // children: [
-    //   {
-    //     path:'',
-    //     loadChildren : () => import('./features/categories/categories.routes').then(m => m.CATEGORIES_ROUTES)
-    //   }
-    // ]
+    children: [
+      {
+        path:'',
+        loadChildren : () => import('./features/enrollments/enrollments.routes').then(m => m.ENROLLMENTS_ROUTES)
+      }
+    ]
   },
     {
     path: '**',
