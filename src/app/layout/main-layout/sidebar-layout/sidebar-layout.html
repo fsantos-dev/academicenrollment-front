@@ -1,0 +1,30 @@
+<div class="bg-primary-500 h-full p-4 relative">
+  <div class="flex justify-between items-center text-white mb-4">
+   <span class="text-1xl font-bold">Enrollment APP</span>
+    <p-button
+      icon="pi pi-times"
+      severity="secondary"
+      variant="text"
+      (click)="isOpen.emit()"
+    ></p-button>
+  </div>
+  <ul class="text-white">
+    @for (item of menuOptions; track item.id) {
+      <li
+        class="flex items-center gap-2 cursor-pointer rounded-lg mb-2"
+        routerLinkActive="bg-[#477FF8]"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <a
+          class="cursor-pointer w-full flex items-center gap-2 p-2 rounded-lg"
+          [routerLink]="item.route"
+        >
+          <i [class]="item.icon + ' !text-1xl'"></i>{{ item.label }}</a
+        >
+      </li>
+    }
+  </ul>
+  <div class="absolute bottom-5 inset-x-0 flex justify-center">
+    <span class="text-white text-sm">Version {{ version }}</span>
+  </div>
+</div>

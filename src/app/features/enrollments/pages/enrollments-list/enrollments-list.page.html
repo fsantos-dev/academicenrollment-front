@@ -1,0 +1,41 @@
+<div class="h-full flex flex-col p-4 rounded-lg shadow-lg border border-gray-100 overflow-auto">
+  <!-- Encabezado de la página -->
+  <div class="shrink-0 flex flex-col justify-between gap-4">
+    <div class="flex justify-between">
+      <div>
+        <h1 class="text-xl font-bold">Registro de materias</h1>
+        <span class="text-gray-600 text-sm" 
+          >Semestre 2026-II · Selecciona 3 materias (9 créditos) · No puedes repetir profesor</span
+        >
+        <div class="border-b border-gray-300"></div>
+      </div>
+
+      <div class="flex flex-col items-end">
+        <span class="text-gray-600 text-sm">Materias Seleccionadas</span>
+        <span class="text-primary-500 font-bold text-lg">3 / 3</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+      @for (item of subjects(); track $index) {
+        <div
+          class="flex flex-col justify-between min-w-30 h-60 rounded-lg shadow-sm border border-gray-300 p-3"
+        >
+          <div class="flex flex-col gap-2 mt-5">
+            <h2 class="font-bold text-lg">{{item.name}}</h2>
+            <span class="text-gray-600">Prof. {{item.professorName}}</span>
+            <span class="text-gray-600">{{item.credits}} Creditos</span>
+          </div>
+
+          <p-button
+            label="Seleccionar"
+            severity="contrast"
+            variant="outlined"
+            fluid
+            type="submit"
+          />
+        </div>
+      }
+    </div>
+  </div>
+</div>
