@@ -16,6 +16,16 @@ export const routes: Routes = [
       {
         path:'',
         loadChildren : () => import('./features/enrollments/enrollments.routes').then(m => m.ENROLLMENTS_ROUTES)
+      },
+    ]
+  },
+   { path: 'summary', 
+    canActivate: [authGuard],
+    component: MainLayout,
+    children: [
+      {
+        path:'',
+        loadChildren : () => import('./features/summary/summary.routes').then(m => m.SUMMARY_ROUTES)
       }
     ]
   },

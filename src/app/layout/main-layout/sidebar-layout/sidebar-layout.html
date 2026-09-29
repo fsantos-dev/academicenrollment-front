@@ -3,8 +3,8 @@
    <span class="text-1xl font-bold">Enrollment APP</span>
     <p-button
       icon="pi pi-times"
-      severity="secondary"
-      variant="text"
+      styleClass="btn-custom"
+      [style]="{ background: '#FFFFFFF', color: '#FFFFFF' }"
       (click)="isOpen.emit()"
     ></p-button>
   </div>
@@ -12,7 +12,7 @@
     @for (item of menuOptions; track item.id) {
       <li
         class="flex items-center gap-2 cursor-pointer rounded-lg mb-2"
-        routerLinkActive="bg-[#477FF8]"
+        routerLinkActive="bg-[#000]"
         [routerLinkActiveOptions]="{ exact: true }"
       >
         <a

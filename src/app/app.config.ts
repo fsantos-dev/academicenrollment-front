@@ -24,7 +24,7 @@ const MyPreset = definePreset(Aura, {
       800: '#763923',
       900: '#602e1d',
       950: '#431f14'
-    }
+    },
   }
 });
 export const appConfig: ApplicationConfig = {
