@@ -1,8 +1,7 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { EnrollmentStore } from '../../store/enrollments.store';
-import { SubjectResponse } from '../../models/subjects.model';
-import { Subject } from 'rxjs';
+
 
 @Component({
   selector: 'app-enrollments-list-page',

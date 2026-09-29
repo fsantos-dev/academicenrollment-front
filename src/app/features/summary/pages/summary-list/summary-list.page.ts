@@ -1,6 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ClassmatesStore } from '../../store/classmates.store';
-import { UserService } from '../../../../core/auth/user.service';
 import { AuthStore } from '../../../../core/auth/auth.store';
 import { getSplitPart } from '../../../../shared/utils/split-part';
 

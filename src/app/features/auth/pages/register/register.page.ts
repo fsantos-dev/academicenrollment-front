@@ -8,7 +8,7 @@ import { AuthStore } from '../../../../core/auth/auth.store';
 import { RegisterForm } from '../../models/auth-model';
 import { passwordMatchValidator } from '../../../../shared/validators/password-match-validator';
 import { RouterLink } from '@angular/router';
-import { first } from 'rxjs';
+
 @Component({
   selector: 'app-register',
   standalone: true,

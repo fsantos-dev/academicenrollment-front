@@ -88,7 +88,7 @@ export class AuthStore {
         takeUntilDestroyed(this.destroyRef),
       )
       .subscribe({
-        next: (response) => {
+        next: () => {
           this.router.navigate(['auth/login']);
         },
         error: (err: HttpErrorResponse) => {
