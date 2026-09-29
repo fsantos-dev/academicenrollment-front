@@ -7,5 +7,6 @@ export interface EnrollmentResponse {
     subjectId : number;
     subjectName: string;
     credits: number;
-    professorName: string;
+    professorId?: number;
+    professorName?: string;
 }

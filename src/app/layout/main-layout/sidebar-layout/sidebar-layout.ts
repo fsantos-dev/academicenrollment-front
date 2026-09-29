@@ -20,8 +20,8 @@ export class SidebarLayout {
   public version = APP_CONFIG.appVersion;
 
   menuOptions : MenuOption[] = [
-    { id: 1, label:'Registro de materias', icon:'pi pi-list', route: '/subject-register'},
-    { id: 2, label:'Asignaturas inscritas', icon:'pi pi-file-plus', route: '/subject-summary'},
+    { id: 1, label:'Registro de materias', icon:'pi pi-list', route: '/enrollments'},
+    { id: 2, label:'Asignaturas inscritas', icon:'pi pi-file-plus', route: '/summary'},
   ];
 
   close(): void {

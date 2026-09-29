@@ -12,3 +12,27 @@ body {
 #p-license-host{
     display: none!important;
 }
+
+/* .btn-custom.p-button {
+  background: #7c3aed;
+  border-color: #7c3aed;
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    background: #6d28d9;
+    border-color: #6d28d9;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.4);
+  }
+} */
+
+
+/* 
+ [label]="buttonProps().text"
+            [style]="{ 
+              background: buttonProps().background, 
+              color: buttonProps().color, 
+              border : buttonProps().border,  
+            }" */
